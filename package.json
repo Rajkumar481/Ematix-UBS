@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Billing backend API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup-project": "npm i && cd frontend && npm i",
+    "server": "nodemon server",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \" npm run server\" \" npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/material": "^7.2.0",
+    "@mui/styled-engine-sc": "^7.2.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "install": "^0.13.0",
+    "mongoose": "^8.16.0",
+    "path": "^0.12.7",
+    "react-calendar": "^6.0.0",
+    "styled-components": "^6.1.19",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
